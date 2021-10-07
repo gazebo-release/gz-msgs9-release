@@ -1,18 +1,6 @@
-ignition-msgs8 (8.0.0-1~focal) focal; urgency=medium
-
-  * ignition-msgs8 8.0.0-1 release
-
- -- Carlos Aguero <caguero@openrobotics.org>  Tue, 28 Sep 2021 19:33:12 +0200
-
-ignition-msgs8 (8.0.0~pre1-1~focal) focal; urgency=medium
-
-  * ignition-msgs8 8.0.0~pre1-1 release
-
- -- Carlos Aguero <caguero@openrobotics.org>  Fri, 17 Sep 2021 22:17:59 +0200
-
-ignition-msgs8 (7.999.999-1~focal) focal; urgency=medium
+ignition-msgs9 (8.999.999-1~focal) focal; urgency=medium
 
   * Stub to be removed after first entry
 
- -- Louise Poubel <louise@openrobotics.org>  Thu, 01 Apr 2021 15:25:22 -0700
+ -- Louise Poubel <louise@openrobotics.org>  Thu, 07 Oct 2021 15:29:19 -0700
 
