@@ -1,0 +1,30 @@
+#!/bin/sh
+# autopkgtest check: Build and run a program against ign-msgs, to verify that the
+# headers and pkg-config file are installed correctly
+# (C) 2012 Jose Luis Rivero
+# Author: Jose Luis Rivero <jrivero@osrfoundation.org>
+
+set -e
+
+WORKDIR=$(mktemp -d)
+trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
+cd $WORKDIR
+cat <<EOF > igntest.c
+
+#include <iostream>
+#include <ignition/msgs.hh>
+
+int main(int argc, char **argv)
+{
+    ignition::msgs::Int32 foo;
+    ignition::msgs::StringMsg fee;
+
+    return 0;
+}
+EOF
+
+g++ -o igntest igntest.c `pkg-config --cflags --libs ignition-msgs8`
+echo "build: OK"
+[ -x igntest ]
+./igntest
+echo "run: OK"
