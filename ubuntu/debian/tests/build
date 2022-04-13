@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 }
 EOF
 
-g++ -o igntest igntest.c `pkg-config --cflags --libs ignition-msgs8`
+g++ -o igntest igntest.c `pkg-config --cflags --libs ignition-msgs9`
 echo "build: OK"
 [ -x igntest ]
 ./igntest
