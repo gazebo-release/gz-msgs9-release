@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: ignition-msgs
-Upstream-Contact: https://github.com/ignitionrobotics/ign-msgs/issues
-Source: https://github.com/ignitionrobotics/ign-msgs/tree/ign-msgs5
+Upstream-Name: gz-msgs
+Upstream-Contact: https://github.com/gazebosim/ign-msgs/issues
+Source: https://github.com/gazebosim/ign-msgs/tree/ign-msgs5
 Files-Excluded: test/gtest
 
 Files: *
