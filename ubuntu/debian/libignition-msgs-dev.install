@@ -1,9 +1,9 @@
 usr/include/*
 usr/lib/*/*.so
 usr/lib/*/pkgconfig/*.pc
-usr/lib/*/cmake/+(ignition|gz)-msgs*/*
-usr/share/+(ignition|gz)/*
-usr/lib/ruby/+(ignition|gz)/*.rb
-usr/lib/*/ruby/+(ignition|gz)/msgs[0-99]/*
+usr/lib/*/cmake/*-msgs*/*
+usr/share/*/*
+usr/lib/ruby/*/*.rb
+usr/lib/*/ruby/*/msgs[0-99]/*
 usr/lib/*/ruby/gz/msgs[0-99]/*
-usr/share/+(ignition|gz)/+(ignition|gz)-msgs*/+(ignition|gz)-msgs[0-9].tag.xml
+usr/share/*/*-msgs*/*-msgs[0-9].tag.xml
