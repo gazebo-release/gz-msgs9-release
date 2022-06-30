@@ -1,4 +1,4 @@
-Source: ignition-msgs9
+Source: gz-msgs9
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -9,20 +9,22 @@ Build-Depends: cmake,
                libprotoc-dev,
                libprotobuf-dev (>= 2.3.0),
                libtinyxml2-dev,
-               libignition-cmake3-dev,
-               libignition-math7-dev,
-               libignition-tools2-dev,
+               libgz-cmake3-dev,
+               libgz-math7-dev,
+               libgz-tools2-dev,
                protobuf-compiler,
 Vcs-Browser: https://github.com/gazebosim/gz-msgs
 Vcs-Git: https://github.com/gazebo-release/gz-msgs5-release
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
-Package: libignition-msgs9
+Package: libgz-msgs9
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-msgs9 (<< 8.999.999+nightly+git20220630+1r7cf04fc6594634b3262a54c164fcb357756821e2-1)
+Replaces: libignition-msgs9 (<< 8.999.999+nightly+git20220630+1r7cf04fc6594634b3262a54c164fcb357756821e2-1)
 Multi-Arch: same
 Description: Set of message definitions used by robotics apps - Shared library
  Gazebo msgs is a component in the Gazebo framework, a set of
@@ -31,17 +33,19 @@ Description: Set of message definitions used by robotics apps - Shared library
  .
  This package contains the main message library.
 
-Package: libignition-msgs9-dev
+Package: libgz-msgs9-dev
 Architecture: any
 Section: libdevel
 Depends: libprotobuf-dev (>= 2.3.0),
          libprotoc-dev,
          protobuf-compiler,
          libtinyxml2-dev,
-         libignition-cmake3-dev,
-         libignition-math7-dev,
-         libignition-msgs9 (= ${binary:Version}),
+         libgz-cmake3-dev,
+         libgz-math7-dev,
+         libgz-msgs9 (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-msgs9-dev (<< 8.999.999+nightly+git20220630+1r7cf04fc6594634b3262a54c164fcb357756821e2-1)
+Replaces: libignition-msgs9-dev (<< 8.999.999+nightly+git20220630+1r7cf04fc6594634b3262a54c164fcb357756821e2-1)
 Multi-Arch: same
 Description: Set of message definitions used by robotics apps - Dev files
  Gazebo msgs is a component in the Gazebo framework, a set of
@@ -49,3 +53,19 @@ Description: Set of message definitions used by robotics apps - Dev files
  defines common protobuf messages used by the robotics community.
  .
  This package contains the headers and other tools for development.
+
+Package: libignition-msgs9
+Depends: libgz-msgs9, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-msgs9-dev
+Depends: libgz-msgs9-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
