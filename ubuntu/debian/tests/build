@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 }
 EOF
 
-g++ -o gztest gztest.c `pkg-config --cflags --libs ignition-msgs9`
+g++ -o gztest gztest.c `pkg-config --cflags --libs gz-msgs9`
 echo "build: OK"
 [ -x gztest ]
 ./gztest
