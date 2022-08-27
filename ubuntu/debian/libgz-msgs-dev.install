@@ -2,7 +2,5 @@ usr/include/*
 usr/lib/*/*.so
 usr/lib/*/pkgconfig/*.pc
 usr/lib/*/cmake/*-msgs*/*
-usr/share/gz/*
-usr/lib/ruby/*/*.rb
 usr/lib/*/ruby/*/msgs[0-99]/*
 usr/share/gz/*-msgs*/*-msgs[0-9].tag.xml
