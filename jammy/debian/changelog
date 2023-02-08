@@ -1,3 +1,9 @@
+gz-msgs9 (9.3.0-1~jammy) jammy; urgency=medium
+
+  * gz-msgs9 9.3.0-1 release
+
+ -- Carlos Aguero <caguero@openrobotics.org>  Wed, 08 Feb 2023 14:01:23 +0100
+
 gz-msgs9 (9.2.0-1~jammy) jammy; urgency=medium
 
   * gz-msgs9 9.2.0-1 release
