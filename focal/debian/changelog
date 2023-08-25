@@ -1,3 +1,9 @@
+gz-msgs9 (9.5.0-1~focal) focal; urgency=medium
+
+  * gz-msgs9 9.5.0-1 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Fri, 25 Aug 2023 12:08:43 -0500
+
 gz-msgs9 (9.4.0-1~focal) focal; urgency=medium
 
   * gz-msgs9 9.4.0-1 release
